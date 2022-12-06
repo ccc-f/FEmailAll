@@ -37,21 +37,25 @@ Example:
 
 邮箱信息收集主要来源如下：
 
-- Search
-  - Ask                     # 需代理
-  - Baidu                   # 反爬虫，无法正常使用
-  - Bing                    # cn 版可以，国际版需代理
-  - Google                  # 反爬虫，无法正常使用，加需代理
-  - QWant                   # 正常
-  - SO                      # 反爬虫，无法正常使用
-  - Sougou                  # 反爬虫，无法正常使用
-  - GithubApi               # 正常
+ ```
+ - Search
+  - Ask                     	# 需代理
+  - Baidu                   	# 反爬虫，无法正常使用
+  - Bing                    	# cn 版可以，国际版需代理
+  - Google                  	# 反爬虫，无法正常使用，加需代理
+  - QWant                   	# 正常
+  - SO                      	# 反爬虫，无法正常使用
+  - Sougou                  	# 反爬虫，无法正常使用
+  - GithubApi               	# 正常
 - DataSets
-  - Email-Format            # 正常
-  - Skymem                  # 正常
-  - Veryvp                  # 正常，已修复
-  - PhoneBook               # 正常，已修复
-  - Snov                    # 正常，已修复
+  - Email-Format            	# 正常
+  - Skymem                  	# 正常
+  - Veryvp                  	# 正常，已修复
+  - PhoneBook               	# 正常，已修复
+  - Snov                    	# 正常，已修复
+ ```
+
+​    
 
 ## 配置
 
@@ -61,22 +65,31 @@ proxy={'http': '127.0.0.1:2333', 'https': '127.0.0.1:2333'}
 
 API配置在 api.py文件
 
+```
 # http://www.veryvp.com/
+
 veryvp_username = ''
 veryvp_password = ''
 
 # https://www.github.com
+
 github_token = ''
 
 # https://app.snov.io/
+
 snov_username = ''
 snov_password = ''
 
 # https://phonebook.cz/
+
 pb_url = 'https://2.intelx.io/phonebook/search'
 pb_key = ''
 
-- `veryvp`和`snov`去网站免费注册
+- 
+```
+
+`veryvp`和`snov`去网站免费注册
+
 - `GitHub`的token去设置里创建一个即可
 
 phonebook 的 apikey 的获取方式更新了，先打开 https://phonebook.cz/ ，按提示注册登录，再返回原页面，按F12，搜索框搜索任意一个域名，可以在 Network 里面看到POST请求 	https://2.intelx.io/phonebook/search?k=xxx-xxx-xxx-xxx ， 把key放到配置文件里面的 pb_key 就可以了。
