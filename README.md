@@ -16,6 +16,7 @@ EmailAll 的 Bug fixed 版本，主要修复了 phonebook、snov、veryvp 模块
 $ git clone https://github.com/ccc-f/FEmailAll.git
 $ cd EmailAll
 $ pip3 install -r requirements.txt
+$ pip3 install -U fake_useragent
 ```
 
 ```python
