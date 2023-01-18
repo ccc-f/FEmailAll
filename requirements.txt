@@ -1,4 +1,4 @@
-fake_useragent==0.1.11
+fake-useragent==1.1.1
 fire==0.4.0
 loguru==0.5.3
 lxml==4.5.0
